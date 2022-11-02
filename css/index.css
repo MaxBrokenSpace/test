@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px auto;
+}
+article {
+  min-width: 0;
+}
+
+.carousel-reviews__container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+}
+
+.carousel-reviews__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-reviews__head-title {
+  font-size: 33.5px;
+  font-family: "Baloo 2", cursive;
+  color: #3c3731;
+
+  text-align: center;
+}
+
+.carousel-reviews__head-img {
+  text-align: center;
+}
+
+.carousel-reviews__head-p {
+  text-align: center;
+  color: #958b7e;
+}
+
+.carousel-reviews__body {
+  display: flex;
+  justify-content: space-evenly;
+
+  vertical-align: baseline;
+}
+
+.carousel-reviews__body-person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #ffe6d4;
+}
+
+.carousel-reviews__body-person-img > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.carousel-reviews__body-person-name {
+  color: #3c3731;
+  font-family: "Baloo 2", cursive;
+  font-size: 21px;
+
+  text-align: center;
+}
+
+.carousel-reviews__body-person-pet {
+  color: #ed6435 !important;
+  font-size: 15px;
+
+  text-align: center;
+}
+
+.carousel-reviews__body-person-p {
+  color: rgb(142, 142, 142);
+  text-align: center;
+  font-size: 17px;
+  width: auto;
+}
+
+.carousel-reviews__body-person-date > p {
+  color: #3c3731 !important;
+  font-size: 15px;
+
+  text-align: center;
+}
+
+.products-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.products-carousel__slide-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.products-carousel__prev,
+.products-carousel__next {
+  align-self: center;
+  border: none;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.products-carousel__prev > img,
+.products-carousel__next > img {
+  width: 20px;
+}
+
+.slide {
+
+}
+
+@media (max-width: 600px) {
+  .carousel-reviews__body-person {
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+
+  .carousel-reviews__body-person-img > img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .carousel-reviews__body-person-name {
+    font-size: 18px;
+  }
+
+  .products-carousel {
+    justify-content: flex-start;
+  }
+
+  .carousel-reviews__container {
+  }
+  .carousel-reviews__head {
+  }
+
+  .carousel-reviews__head-title {
+    font-size: 20px;
+  }
+}
